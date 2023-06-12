@@ -11,7 +11,7 @@ const cn = {
         "> QQ：2307458122\n" +
         "> 欢迎资助API Key\n" +
         "\n" +
-        "![](https://imgse.com/i/pCeSEPf)\n"
+        "![](https://s1.ax1x.com/2023/06/12/pCeSEPf.jpg)\n"
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -185,7 +185,7 @@ const cn = {
         "> QQ：2307458122\n" +
         "> 欢迎资助API Key\n" +
         "\n" +
-        "![](https://imgse.com/i/pCeSEPf)\n" ,
+        "![](https://s1.ax1x.com/2023/06/12/pCeSEPf.jpg)\n" ,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
