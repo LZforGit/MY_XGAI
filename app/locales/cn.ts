@@ -9,9 +9,9 @@ const cn = {
         "🌐[点击前往设置页](/#/settings)输入正确访问密码，或者填入你自己的 OpenAI API Key。\n" +
         "## 问题汇总\n" +
         "> QQ：2307458122\n" +
-        "> 欢迎资助 API Key\n" +
+        "> 欢迎资助API Key\n" +
         "\n" +
-        img.src = ./01.jpg
+        "![](https://imgse.com/i/pCeSEPf)\n"
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -183,8 +183,9 @@ const cn = {
         // "🧧[点击扫码微信打赏-点击扫码微信打赏]()\n" +
         "## 问题汇总\n" +
         "> QQ：2307458122\n" +
+        "> 欢迎资助API Key\n" +
         "\n" +
-        "![](./01.jpg)\n" ,
+        "![](https://imgse.com/i/pCeSEPf)\n" ,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
