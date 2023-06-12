@@ -11,7 +11,7 @@ const cn = {
         "> QQ：2307458122\n" +
         "> 欢迎资助API Key\n" +
         "\n" +
-        "![](https://s1.ax1x.com/2023/06/12/pCep0XQ.md.jpg)\n"
+        "![](https://s1.ax1x.com/2023/06/12/pCePSYt.jpg)\n"
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -180,13 +180,13 @@ const cn = {
     BotHello:
         "## ChatGPT 3.5-Turbo \n"+
         "### ⭐无限制免费使用！！！\n" +
-        "开始AI之旅吧 \n " +
+        "🔰开始AI之旅吧! \n " +
         // "🧧[点击扫码微信打赏-点击扫码微信打赏]()\n" +
         "### 问题汇总\n" +
         "> QQ：2307458122\n" +
         "> 欢迎资助API Key\n" +
         "\n" +
-        "![](https://s1.ax1x.com/2023/06/12/pCep0XQ.md.jpg)\n" ,
+        "![](https://s1.ax1x.com/2023/06/12/pCePSYt.jpg)\n" ,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
