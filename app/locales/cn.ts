@@ -4,7 +4,13 @@ const cn = {
   WIP: "别点别点别点....还没开发呢...",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，或者填入你自己的 OpenAI API Key。",
+    "## ChatGPT体验版本 \n"+
+        "## ⭐限制免费使用！！！\n" +
+        "🌐[点击前往设置页输入正确访问密码，或者填入你自己的 OpenAI API Key。\"](/#/settings)\n" +
+        "## 问题汇总\n" +
+        "> QQ：2307458122\n" +
+        "\n" +
+        "![](./01.jpg)\n"
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -171,9 +177,9 @@ const cn = {
   Store: {
     DefaultTopic: "新的聊天",
     BotHello:
-        "## ChatGPT\n" +
-        "## ⭐无期限无限制免费使用！！！\n" +
-        "🧧[点击扫码微信打赏-点击扫码微信打赏](http://a1.qpic.cn/psc?/V12wxaRL2W3JQk/ruAMsa53pVQWN7FLK88i5ncfKNinIKBxWArwtQGKqY3OTQqFVbBOARLqFhwDSYm3A6vSI*P3v09E69Jr*nPNCOOAr2Eltlo7F3ej9azyUOw!/c&ek=1&kp=1&pt=0&bo=2wNRAtsDUQIBFzA!&t=5&tl=3&vuin=2307458122&tm=1686549600&dis_t=1686553131&dis_k=e111ddc33e68f1f5cd68877183d4e277&sce=60-2-2&rf=0-0)\n" +
+        "## ChatGPT体验版本 \n"+
+        "## ⭐限制免费使用！！！\n" +
+        // "🧧[点击扫码微信打赏-点击扫码微信打赏]()\n" +
         "## 问题汇总\n" +
         "> QQ：2307458122\n" +
         "\n" +
