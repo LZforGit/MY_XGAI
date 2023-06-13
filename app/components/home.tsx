@@ -56,7 +56,6 @@ export function useSwitchTheme() {
     document.body.classList.remove("light");
     document.body.classList.remove("dark");
 
-    
     if (config.theme === "夜间模式") {
       document.body.classList.add("dark");
     } else if (config.theme === "日间模式") {
@@ -70,7 +69,7 @@ export function useSwitchTheme() {
       'meta[name="theme-color"][media*="light"]',
     );
 
-    if (config.theme === "auto") {
+    if (config.theme === "跟随系统") {
       metaDescriptionDark?.setAttribute("content", "#151515");
       metaDescriptionLight?.setAttribute("content", "#fafafa");
     } else {
