@@ -49,6 +49,7 @@ const MaskPage = dynamic(async () => (await import("./mask")).MaskPage, {
   loading: () => <Loading noLogo />,
 });
 
+
 export function useSwitchTheme() {
   const config = useAppConfig();
 
