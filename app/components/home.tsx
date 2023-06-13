@@ -56,6 +56,7 @@ export function useSwitchTheme() {
     document.body.classList.remove("light");
     document.body.classList.remove("dark");
 
+    
     if (config.theme === "夜间模式") {
       document.body.classList.add("dark");
     } else if (config.theme === "日间模式") {
