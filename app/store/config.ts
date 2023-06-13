@@ -11,18 +11,18 @@ export enum SubmitKey {
 }
 
 export enum Theme {
-  Auto = "auto",
-  Dark = "dark",
-  Light = "light",
+  Auto = "跟随系统",
+  Dark = "夜间模式",
+  Light = "日间模式",
 }
 
 export const DEFAULT_CONFIG = {
-  submitKey: SubmitKey.CtrlEnter as SubmitKey,
+  submitKey: SubmitKey.Enter as SubmitKey,
   avatar: "1f603",
   fontSize: 14,
   theme: Theme.Auto as Theme,
   tightBorder: false,
-  sendPreviewBubble: true,
+  sendPreviewBubble: false,//是否显示预览气泡
   sidebarWidth: 300,
 
   disablePromptHint: false,
@@ -32,11 +32,11 @@ export const DEFAULT_CONFIG = {
   modelConfig: {
     model: "gpt-3.5-turbo" as ModelType,
     temperature: 0.5,
-    max_tokens: 2000,
+    max_tokens: 8000,
     presence_penalty: 0,
     sendMemory: true,
-    historyMessageCount: 4,
-    compressMessageLengthThreshold: 1000,
+    historyMessageCount: 6,
+    compressMessageLengthThreshold: 1200,
   },
 };
 
@@ -74,7 +74,7 @@ export const ALL_MODELS = [
   },
   {
     name: "gpt-3.5-turbo-0301",
-    available: true,
+    available: false,
   },
   {
     name: "qwen-v1", // 通义千问
