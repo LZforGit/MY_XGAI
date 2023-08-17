@@ -178,9 +178,12 @@ const cn = {
     DefaultTopic: "新的聊天",
     BotHello:
         "## ChatGPT \n"+
-        "🔰开始AI之旅吧! \n " +
+        "### 🔰欢迎使用！！！\n" +
+        "臻 For OpenAI"+
         "### 问题汇总\n" +
-        "> ✨获取密码请联系QQ：2307458122\n"
+        "> ✨使用过程中有任何问题请联系QQ：2307458122\n" +
+        "### ⛔商业版本\n" +
+        "🌐[ChatGPT For Z](http://zhenaaa.online/)\n商业版本提供更加优质的回答，更贴心的UI设计，全平台适配，聊天记录云同步！欢迎体验！！"
      ,
     Error: "出错了，稍后重试吧",
     Prompt: {
