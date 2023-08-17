@@ -179,7 +179,7 @@ const cn = {
     BotHello:
         "## ChatGPT \n"+
         "### 🔰欢迎使用！！！\n" +
-        "臻 For OpenAI"+
+        "臻 For OpenAI\n"+
         "### 问题汇总\n" +
         "> ✨使用过程中有任何问题请联系QQ：2307458122\n" +
         "### ⛔商业版本\n" +
