@@ -581,9 +581,10 @@ export function Settings() {
           />
         </List>
 
-        {shouldShowPromptModal && (
-          <UserPromptModal onClose={() => setShowPromptModal(false)} />
+        {false && (
+           <UserPromptModal onClose={() => setShowPromptModal(false)} />
         )}
+
       </div>
     </ErrorBoundary>
   );
