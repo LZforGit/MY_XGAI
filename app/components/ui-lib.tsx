@@ -166,7 +166,8 @@ export function Toast(props: ToastProps) {
   return (
     <div className={styles["toast-container"]}>
       <div className={styles["toast-content"]}>
-        <span>{"✨谋士以身入局，举棋胜天半子"}</span>
+        {/*<span>{"✨谋士以身入局，举棋胜天半子"}</span>*/}
+        <span>{props.content}</span>
         {props.action && (
           <button
             onClick={() => {
