@@ -5,10 +5,14 @@ declare global {
     interface ProcessEnv {
       OPENAI_API_KEY?: string;
       CODE?: string;
+      BASE_URL?: string;
       PROXY_URL?: string;
       VERCEL?: string;
       HIDE_USER_API_KEY?: string; // disable user's api key input
       DISABLE_GPT4?: string; // allow user to use gpt-4 or not
+      BUILD_MODE?: "standalone" | "export";
+      BUILD_APP?: string; // is building desktop app
+      HIDE_BALANCE_QUERY?: string; // allow user to query balance or not
     }
   }
 }
@@ -33,14 +37,21 @@ export const getServerSideConfig = () => {
     );
   }
 
-  return {
-    apiKey: process.env.OPENAI_API_KEY,
+  // 增加Key池实现多Key 轮询
+// 从这里开始
+  const apiKeys = (process.env.OPENAI_API_KEY ?? '').split(',')
+  const apiKey = apiKeys.at(Math.floor(Math.random() * apiKeys.length)) ?? ''
+
+return {
+    apiKey,
     code: process.env.CODE,
     codes: ACCESS_CODES,
     needCode: ACCESS_CODES.size > 0,
+    baseUrl: process.env.BASE_URL,
     proxyUrl: process.env.PROXY_URL,
     isVercel: !!process.env.VERCEL,
     hideUserApiKey: !!process.env.HIDE_USER_API_KEY,
-    enableGPT4: !process.env.DISABLE_GPT4,
+    disableGPT4: !!process.env.DISABLE_GPT4,
+    hideBalanceQuery: !!process.env.HIDE_BALANCE_QUERY,
   };
 };
